@@ -2,16 +2,15 @@ name: GitHub Pages
 
 on:
   push:
-    branches:
-      - main  
+    branches: [ main ]  
 
 jobs:
-  build:
+  demo:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        run: actions/checkout@v2
 
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
